@@ -1,10 +1,14 @@
-﻿<Properties StartupConfiguration="{5DFEDC27-4A67-467A-86A7-06D34FAA204B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ficha2/Program.cs">
+﻿<Properties StartupConfiguration="{FC163BBE-3A99-44C7-8F35-834B0F715991}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ficha2/Pessoa.cs">
     <Files>
-      <File FileName="Ficha2/Program.cs" Line="13" Column="1" />
+      <File FileName="Ficha2/Program.cs" Line="11" Column="6" />
+      <File FileName="Ficha2/Forma.cs" Line="6" Column="47" />
+      <File FileName="Ficha2/Circulo.cs" Line="16" Column="5" />
+      <File FileName="Ficha2/Quadrado.cs" Line="19" Column="10" />
+      <File FileName="Ficha2/Pessoa.cs" Line="2" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

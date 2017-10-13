@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{5DFEDC27-4A67-467A-86A7-06D34FAA204B}</ProjectGuid>
+    <ProjectGuid>{FC163BBE-3A99-44C7-8F35-834B0F715991}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Ficha2</RootNamespace>
     <AssemblyName>Ficha2</AssemblyName>
@@ -34,6 +34,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forma.cs" />
+    <Compile Include="Circulo.cs" />
+    <Compile Include="Quadrado.cs" />
+    <Compile Include="Triangulo.cs" />
+    <Compile Include="Pessoa.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
