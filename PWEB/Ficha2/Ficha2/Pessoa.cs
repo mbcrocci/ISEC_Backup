@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Exercicio4
+namespace Ficha2
 {
     public class Pessoa
     {
@@ -10,7 +10,7 @@ namespace Exercicio4
         {}
 
         public Pessoa(int dia, int mes, int ano, string nome) {
-            this.dataNascimento = (dia, mes, ano);
+            this.dataNascimento = (ano, mes, dia);
             this.nome = nome;
         }
 

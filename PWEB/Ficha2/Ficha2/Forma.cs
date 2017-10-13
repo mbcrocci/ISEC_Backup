@@ -1,9 +1,9 @@
 ﻿using System;
-namespace Exercicio3
+
+namespace Ficha2
 {
     abstract public class Forma
     {
         abstract public double CalcularArea();
-
     }
 }

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Exercicio3
+namespace Ficha2
 {
     public class Circulo : Forma
     {

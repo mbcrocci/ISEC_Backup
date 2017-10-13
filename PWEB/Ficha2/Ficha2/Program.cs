@@ -6,7 +6,9 @@ namespace Ficha2
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Forma circulo = new Circulo(10.12);
+
+            Console.WriteLine($"Area do circulo: {circulo.CalcularArea()}");
         }
     }
 }
