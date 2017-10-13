@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{344D4B86-2535-41B1-9A72-2AF985F54DFD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="F1Ex1/Program.cs">
+    <Files>
+      <File FileName="F1Ex1/Program.cs" Line="130" Column="13" />
+      <File FileName="F1Ex1/Tarefa.cs" Line="15" Column="23" />
+      <File FileName="F1Ex1/GestorTarefas.cs" Line="48" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.F1Ex1 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

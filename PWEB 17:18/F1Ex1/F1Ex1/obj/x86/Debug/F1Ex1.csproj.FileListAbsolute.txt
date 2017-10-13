@@ -1,0 +1,5 @@
+/Users/m0nk1w1/Projects/F1Ex1/F1Ex1/bin/Debug/F1Ex1.exe
+/Users/m0nk1w1/Projects/F1Ex1/F1Ex1/bin/Debug/F1Ex1.pdb
+/Users/m0nk1w1/Projects/F1Ex1/F1Ex1/obj/x86/Debug/F1Ex1.csproj.CoreCompileInputs.cache
+/Users/m0nk1w1/Projects/F1Ex1/F1Ex1/obj/x86/Debug/F1Ex1.exe
+/Users/m0nk1w1/Projects/F1Ex1/F1Ex1/obj/x86/Debug/F1Ex1.pdb

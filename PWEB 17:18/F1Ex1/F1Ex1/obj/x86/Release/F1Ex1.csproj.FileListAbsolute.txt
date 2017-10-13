@@ -1,0 +1,3 @@
+/Users/m0nk1w1/Projects/F1Ex1/F1Ex1/bin/Release/F1Ex1.exe
+/Users/m0nk1w1/Projects/F1Ex1/F1Ex1/obj/x86/Release/F1Ex1.csproj.CoreCompileInputs.cache
+/Users/m0nk1w1/Projects/F1Ex1/F1Ex1/obj/x86/Release/F1Ex1.exe
