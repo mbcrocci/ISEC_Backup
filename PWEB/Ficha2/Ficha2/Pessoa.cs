@@ -1,24 +1,35 @@
 ﻿using System;
 namespace Ficha2
 {
-    public class Pessoa
+    namespace Exercicio4
     {
-        private DateTime dataNascimento;
-        private string nome;
+        public class Pessoa
+        {
+            protected DateTime dataNascimento;
+            protected string nome;
 
-        public Pessoa()
-        {}
+            public Pessoa()
+            { }
 
-        public Pessoa(int dia, int mes, int ano, string nome) {
-            this.dataNascimento = (ano, mes, dia);
-            this.nome = nome;
-        }
+            public Pessoa(int dia, int mes, int ano, string nome = "Deconhecido")
+            {
+                this.dataNascimento = new DateTime(ano, mes, dia);
+                this.nome = nome;
+            }
+            public Pessoa (string nome = "Desconhecido")
+            {
+                this.dataNascimento = new DateTime();
+                this.nome = nome;
+            }
 
-        public DateTime DataNascimento { get; set; }
-        public string nome { get; set; }
+            public DateTime DataNascimento { get; set; }
+            public string Nome { get; set; }
 
-        public string ToString() {
-            return $"{nome}: {dataNascimento}";
+            public override string ToString()
+            {
+                return string.Format("[Pessoa: DataNascimento={0}, Nome={1}]", DataNascimento, Nome);
+            }
+
         }
     }
 }

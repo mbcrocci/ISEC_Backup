@@ -4,6 +4,6 @@ namespace Ficha2
 {
     abstract public class Forma
     {
-        abstract public double CalcularArea();
+        abstract public Double CalcularArea();
     }
 }

@@ -40,6 +40,8 @@
     <Compile Include="Quadrado.cs" />
     <Compile Include="Triangulo.cs" />
     <Compile Include="Pessoa.cs" />
+    <Compile Include="Aluno.cs" />
+    <Compile Include="Professor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

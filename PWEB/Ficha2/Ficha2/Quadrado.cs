@@ -3,8 +3,8 @@ namespace Ficha2
 {
     public class Quadrado : Forma
     {
-        private double comprimento;
-        private double largura;
+        private Double comprimento;
+        private Double largura;
 
         public Quadrado()
         {
@@ -14,7 +14,7 @@ namespace Ficha2
             this.largura = largura;
         }
 
-        public double CalculaArea() {
+        public override Double CalcularArea() {
             return this.comprimento * this.largura;
         }
     }

@@ -1,13 +1,18 @@
 ﻿<Properties StartupConfiguration="{FC163BBE-3A99-44C7-8F35-834B0F715991}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ficha2/Pessoa.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ficha2/Program.cs">
     <Files>
-      <File FileName="Ficha2/Program.cs" Line="12" Column="10" />
-      <File FileName="Ficha2/Pessoa.cs" Line="18" Column="23" />
+      <File FileName="Ficha2/Program.cs" Line="46" Column="14" />
+      <File FileName="Ficha2/Pessoa.cs" Line="30" Column="64" />
+      <File FileName="Ficha2/Circulo.cs" Line="16" Column="50" />
+      <File FileName="Ficha2/Aluno.cs" Line="19" Column="73" />
+      <File FileName="Ficha2/Professor.cs" Line="19" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/m0nk1w1/Projects/ISEC/PWEB/Ficha2/Ficha2/Quadrado.cs" relfile="Ficha2/Quadrado.cs" line="4" column="24" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Ficha2 PreferredExecutionTarget="MonoDevelop.Default" />

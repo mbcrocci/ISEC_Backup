@@ -1,21 +1,26 @@
 ﻿using System;
 namespace Ficha2
 {
-    public class Triangulo
+    namespace Exercicio3
     {
-        private double altura;
-        private double comprimentoBase;
+        public class Triangulo
+        {
+            private Double altura;
+            private Double comprimentoBase;
 
-        public Triangulo()
-        {}
+            public Triangulo()
+            { }
 
-        public Triangulo(double altura, double comprimentoBase) {
-            this.altura = altura;
-            this.comprimentoBase = comprimentoBase;
-        }
+            public Triangulo(Double altura, Double comprimentoBase)
+            {
+                this.altura = altura;
+                this.comprimentoBase = comprimentoBase;
+            }
 
-        public double CalculaArea() {
-            return ( this.comprimentoBase * this.altura ) / 2;
+            public Double CalculaArea()
+            {
+                return (this.comprimentoBase * this.altura) / 2;
+            }
         }
     }
 }
