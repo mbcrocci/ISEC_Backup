@@ -1,39 +1,61 @@
 package com.company;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.InetAddress;
-import java.net.SocketException;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class UDPServer {
+    public static final int BUFSIZE = 4096;
+    private DatagramSocket socket;
 
-    public void run (String args[]) {
+    public  UDPServer(int port) {
         try {
-            System.out.println("Binding to local port 2000");
+            socket = null;
 
-            DatagramSocket socket = new DatagramSocket (2000);
-            DatagramPacket packet = new DatagramPacket (new byte[256], 256);
-
-            socket.receive(packet);
-
-            InetAddress remote_addr = packet.getAddress();
-            System.out.println ("Sent by: " + remote_addr.getHostAddress());
-            System.out.println ("Sent from port: " + packet.getPort());
-
-            ByteArrayInputStream bin = new ByteArrayInputStream (packet.getData());
-            int data;
-            while ((data = bin.read()) != -1)
-                System.out.print((char)data);
-
-            // String msg = new String(packet.getData(), 0, packet.getLength());
-            // System.out.println(msg);
-        } catch (SocketException e) {
-            e.printStackTrace();
-
-        } catch (IOException e) {
-            e.printStackTrace();
+            socket = new DatagramSocket(port);
+        } catch (Exception e) {
+            System.err.println("Unable to bind to port");
         }
+    }
+
+    public void run () {
+
+        if (socket == null);
+
+        byte []buffer = new byte[BUFSIZE];
+
+        System.out.println("[SERVER]: Running");
+        for (;;)
+            try {
+                DatagramPacket packet = new DatagramPacket(buffer, BUFSIZE);
+
+                System.out.println("\n\n[SERVER]: Waiting for packet...");
+                socket.receive(packet);
+
+                System.out.println("Packet received from " + packet.getAddress() +
+                        ":" + packet.getPort() + " of length " + packet.getLength());
+
+                String recvMsg = new String(packet.getData(), 0, packet.getLength());
+                System.out.println("[SERVER]: Packet content [" + recvMsg + "]");
+
+                if (recvMsg.equalsIgnoreCase("TIME")) {
+
+                    Calendar calendar = GregorianCalendar.getInstance();
+                    String timeMsg = calendar.get(GregorianCalendar.HOUR_OF_DAY) +
+                                    ":" + calendar.get(GregorianCalendar.MINUTE) +
+                                    ":" + calendar.get(GregorianCalendar.SECOND);
+
+                    packet.setData(timeMsg.getBytes());
+                    packet.setLength(timeMsg.length());
+
+                    socket.send(packet);
+                    System.out.println("[SERVER]: Packet sent!");
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
     }
 }
