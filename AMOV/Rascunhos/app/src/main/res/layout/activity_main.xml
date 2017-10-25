@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.isec.a21230268.rascunhos.MainActivity"
+    android:background="#ffffe0"
+    android:padding="20dp">
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Rascunho"
+        android:textSize="36sp"
+        android:typeface="serif"
+        android:textStyle="bold|italic"
+        android:background="#808080"
+        android:textColor="#ffffff"
+        android:layout_gravity="top|center_horizontal"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fundo Solido"
+            android:padding="20dp"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:onClick="onSolido"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imagem Galeria"
+            android:padding="20dp"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:onClick="onGaleria"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imagem Capturada"
+            android:padding="20dp"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:onClick="onCapturada"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historico"
+            android:padding="20dp"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:onClick="onHistorico"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
