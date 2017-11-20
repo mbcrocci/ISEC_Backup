@@ -33,8 +33,8 @@ public class TCPClient implements Runnable {
 
             FileOutputStream img = new FileOutputStream(name+filename);
 
-            byte []buff = new byte[MAX_DATA];
             int nbyte;
+            byte []buff = new byte[MAX_DATA];
             while ((nbyte = in.read(buff)) > 0) {
                 img.write(buff, 0, nbyte);
             }

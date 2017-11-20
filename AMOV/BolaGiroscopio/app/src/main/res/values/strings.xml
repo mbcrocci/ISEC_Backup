@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BolaGiroscopio</string>
+    <string name="srtTitulo">Ball Control</string>
+    <string name="msgNoAccel">Nao tem acelerometro</string>
+</resources>
