@@ -13,16 +13,10 @@ public class Server implements Runnable{
     @Override
     public void run() {
         try {
-            Hora hora = new Hora(12, 32, 12);
-            RemoteRef location = hora.getRef();
 
-            String registry = "localhost";
-            // Verificar args caso necessario
-            String registration = "rmi://"+registry+"/Hora";
-
-            System.out.println("SERVER: AINDA NAO REGISTEI");
-            Naming.rebind(registration, hora);
-            System.out.println(("SERVER: JA REGISTEI"));
+            Registry r = LocateRegistry.createRegistry(Registry.REGISTRY_PORT);
+            RemoteTimeService timeService = new RemoteTimeService();
+            r.bind("RemoteTime", timeService);
 
         } catch (Exception e) {
             e.printStackTrace();

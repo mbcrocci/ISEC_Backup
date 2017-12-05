@@ -7,18 +7,11 @@ public class Client implements Runnable {
     @Override
     public void run() {
         try {
-            String registry = "localhost";
-            // Verificar args caso necessario
-            String registration = "rmi://"+registry+"/Hora";
+            String objectURL = "rmi://127.0.0.1/RemoteTime";
 
-            System.out.println("CLIENT: AINDA NAO ME LIGUEI");
-            Remote remoteService = Naming.lookup(registration);
-            System.out.println("CLIENT: JA ME LIGUEI");
+            RemoteTimeInterface timeService = (RemoteTimeInterface) Naming.lookup(objectURL);
 
-            Hora horaService = (Hora) remoteService;
-
-            System.out.println(horaService.toString());
-
+            System.out.println("Hora remota: " + timeService.getHora());
         } catch (Exception e) {
             e.printStackTrace();
         }

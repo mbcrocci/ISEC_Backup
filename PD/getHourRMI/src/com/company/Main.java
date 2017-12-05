@@ -9,7 +9,7 @@ public class Main {
         new Thread(server).start();
 
         try {
-            Thread.sleep(1000 * 30);
+            Thread.sleep(1000 * 3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
